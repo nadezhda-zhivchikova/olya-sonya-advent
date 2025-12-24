@@ -294,8 +294,8 @@ async def daily_broadcast(context: ContextTypes.DEFAULT_TYPE, force: bool = Fals
     state = load_state()
 
     if not force:
-        # Only at 14:50 local time
-        if now.hour != 14 or now.minute != 10:
+        # Only at 11:11 local time
+        if now.hour != 11 or now.minute != 11:
             return
         # Only once per day
         if state.get("last_sent") == today:
